@@ -1,0 +1,25 @@
+body{
+color: #ffffff;
+background-color:black;
+}
+
+article {
+    background-color: rgb(44, 43, 43);
+}
+
+.resaltado {
+color: yellow;
+}
+
+.otros_temas {
+    color: whitesmoke;
+}
+
+.instagram{
+    color: thistle;
+}
+
+#titulo_del_blog{
+text-align:center;
+font-size: 3rem;    
+}
