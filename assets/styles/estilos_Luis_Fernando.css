@@ -17,9 +17,12 @@ color:yellow;
 #titulo_del_blog{
     text-align: center;
     font-size:3rem;
-    background-image:url('assets/images/Barcelona Psg.jpg');
-  -webkit-background-clip: text;
-  color: transparent; 
+    background:linear-gradient(rgb(61, 0, 117), rgb(255, 42, 227));
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-weight:normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
 }
 .n{
     color:white;
