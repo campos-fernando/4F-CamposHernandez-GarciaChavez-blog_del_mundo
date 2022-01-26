@@ -17,6 +17,9 @@ color:yellow;
 #titulo_del_blog{
     text-align: center;
     font-size:3rem;
+    background-image:url('assets/images/Barcelona Psg.jpg');
+  -webkit-background-clip: text;
+  color: transparent; 
 }
 .n{
     color:white;
