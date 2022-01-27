@@ -1,10 +1,12 @@
 body{
-    background-color: black;
+   background-color: black;
 color:#ffffff;
 }
 
 article{
-background-color:rgb(44, 43, 43);
+
+background-color: rgb(44,43,43);
+
 
 
 }
@@ -15,15 +17,28 @@ color:yellow;
 }
 
 #titulo_del_blog{
-    text-align: center;
-    font-size:3rem;
-    background:linear-gradient(rgb(61, 0, 117), rgb(255, 42, 227));
-    -webkit-background-clip: text;
-    color: transparent; 
-    font-weight:normal;
+    font-size: 3rem;
+    
+    font-weight: normal;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
+    position: absolute;
+    top: 35%;
+    left: 40%;
 }
+
+
+/*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );*/
+
+
+.contenedor{
+    max-width: 200%;
+    max-height: 200%;
+    overflow: hidden;
+}
+
 .n{
+    color:white;
+}
+a{
     color:white;
 }
