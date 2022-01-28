@@ -48,3 +48,14 @@ p, h2, h4, h3, figcaption, label, footer, blockquote{
 img{
     margin-top: 10px;
 }
+
+table, th, td {
+    border: 8px solid rgb(162, 0, 255);
+    border-collapse:collapse
+    ;
+padding: 5px;
+border-style: inset;
+
+}
+table{margin-left: 10px;
+margin-right: 500px;}
