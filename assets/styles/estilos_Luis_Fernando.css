@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
    color:#ffffff;
 font-family:Arial;
@@ -6,8 +11,8 @@ font-family:Arial;
 article{
 
 background-color: rgb(44,43,43);
-
-
+padding:1.5rem;
+border-bottom:1px solid #ffffff;
 
 }
 
@@ -27,22 +32,12 @@ color:yellow;
 }
 
 
-/*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );*/
-
-
-
-
 .n{
     color:white;
 }
+
 a{
     color:white;
-}
-
-p, h2, h4, h3, figcaption, label, footer, blockquote{
-    margin-left: 10px;
-    margin-right:10px;
-    margin-bottom: 10px;
 }
 
 img{
@@ -66,3 +61,38 @@ padding: 5px;
 }
 table{margin-left: 10px;
 margin-right: 500px;}
+
+.ilustracion{
+    border:4px solid #ffffff ;
+    display: inline-block;
+
+}
+
+/*id del footer*/
+
+#footer_blog{
+    margin:2rem;
+}
+
+/*head es el estilo propio externo del pae que le voy a dar a mi blog en la parte del header */
+
+.margenes_figcaption{
+    margin-top: 1rem;
+margin-left: 1rem;
+font-style: italic;    
+}
+
+/* VIÑETAS ELIMINADAS*/
+
+    nav>ul>li{
+        list-style: none;
+    }
+
+
+    /*subrayado en links etiqueta "a" eliminadas*/
+nav>ol>li>a{
+    text-decoration: none;
+}
+    nav>ul>li>a{
+        text-decoration:none ;
+    }
