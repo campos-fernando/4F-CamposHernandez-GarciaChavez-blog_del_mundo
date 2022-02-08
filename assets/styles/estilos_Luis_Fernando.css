@@ -96,3 +96,12 @@ nav>ol>li>a{
     nav>ul>li>a{
         text-decoration:none ;
     }
+
+    .etiqueta{
+        background-color: #fffefe;
+        padding: 0.2rem;
+        border: 0.5px dashed #26628a;
+      
+        color: #26628a;
+        white-space: nowrap;
+    }
