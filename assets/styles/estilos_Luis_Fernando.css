@@ -23,9 +23,14 @@ color:yellow;
 }
 
 #titulo_del_blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
     font-size: 3rem;
-    text-align: center;
-    font-weight: normal;
+        text-align: center;
+       font-weight: normal;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
