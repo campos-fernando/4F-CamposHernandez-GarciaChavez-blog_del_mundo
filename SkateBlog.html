@@ -13,31 +13,35 @@
             body {
                 background-color: #002094;
                 background-image: linear-gradient(90deg, #002094 0%, #FF0000 100%);
+                width: 100%;
+                background-repeat: fixed;
             }
         </style>
     </head>
 
+
+
+    <!--temario-->
+    <nav>
+        <ul>
+            <li><a class="resaltado" href="index.html" target="_blank">Principal</a></li>
+            <li><a class="n" href="destinos_2022.html">Destinos para este 2022 </a></li>
+            <li><a class="n" href="programando.html">Programando </a></li>
+            <li><a class="n" href="futbol_europa.html">Fútbol Europeo </a></li>
+        </ul>
+    </nav>
+
     <body>
-
-        <!--temario-->
-        <nav>
-            <ul>
-                <li><a class="resaltado" href="index.html" target="_blank">Principal</a></li>
-                <li><a class="n" href="destinos_2022.html">Destinos para este 2022 </a></li>
-                <li><a class="n" href="programando.html">Programando </a></li>
-                <li><a class="n" href="futbol_europa.html">Fútbol Europeo </a></li>
-            </ul>
-        </nav>
-
-
         <section>
 
             <header>
 
 
-                <div style=" background-image: url('assets/images/board.png'); 
+                <div
+                    style="padding-top: 70px;
+                    background-image: url('assets/images/board.png'); 
                 width: 100%; 
-                height: 350px; background-attachment:fixed;">
+                height: 450px; background-attachment:fixed ;display:flex; justify-content:center; align-items: center;">
 
                     <h1 id="titulo_del_blog">Skateboarding</h1>
 
@@ -219,7 +223,7 @@
                     </header>
                     <div>
 
-                        <nav>
+                        <nav class='mm'>
                             <ul>
                                 <li><a target="pags" href="https://es.wikipedia.org/wiki/Monopatinaje">Descripción de el
                                         skateboarding en Wikipedia</a></li>
@@ -612,6 +616,23 @@
                             <figcaption></figcaption>
                         </picture>
                     </div>
+                    <!-- Footer-->
+                    <footer>
+                        <!-- Datos del autor-->
+                        <div>
+                            <span>Nombre del autor:</span> Fernando Campos <a
+                                href="https://www.instagram.com/_f.e.r.c.h.o.w_/">
+                                mi Instagram</a>
+
+                        </div>
+                        <!-- fin de los datos-->
+                        <!--Bibliografía-->
+                        <blockquote>
+                            <p>Luis Fernando C.H. 2021. SkateBlog. 22/12/2021</p>
+                        </blockquote>
+                        <!--Fin-->
+                    </footer>
+
                 </article>
 
             </main>
