@@ -1,3 +1,4 @@
+/*empiezan clases generales*/
 .body_blog {
     background-color: black;
     color: #fff;}
@@ -10,13 +11,15 @@
 #titulo_del_blog {
     text-align: center;
     font-size: 3rem;}
-
+/*terminan clases generales*/
+/*barras de navegacion*/
 .resaltado {
     color: yellow;}
 
 nav>ul>li {list-style: none;}
-nav>ul>li>a {text-decoration: none}
-
+nav>ul>li>a {text-decoration: none; color: #fff;}
+/*termina barras de navegación*/
+/*ilustración*/
 .ilustracion {
     border: 4px solid white;
     display: inline-block;}
@@ -25,19 +28,26 @@ nav>ul>li>a {text-decoration: none}
     margin-top: 1rem;
     font-style: italic;
     margin-left: 1rem;}
-
+/*fin ilustración*/
+/*footer del blog*/
 #footer_blog {
-    margin: 2rem;}
-
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0 4rem 0;
+    font-size: 1.3rem;}
+/*fin footer del blog*/
+/*Empieza grid*/
 section {
     display: grid;
-    
+    /*Se crearón 12 columnas*/
     grid-template-columns: repeat(12, 1fr);
-  
+    /*Dejamos que ocupen el alto que necesitan*/
     grid-auto-rows: auto;
-    
+    /*Añadimos un espacio entre el grid de 3rem*/
     gap: 3rem;}
-
+/*Termina grid*/
 
 header {
     grid-column: span 12;
@@ -52,8 +62,60 @@ footer {
     grid-column: span 12;
     grid-row: auto;}
 
-.otros_temas {
-    color: whitesmoke;}
+nav {font-size: 1.3rem;}
 
-.instagram{
-    color: thistle;}
+nav>ul>li>a:hover {
+    text-decoration: underline; 
+    color: greenyellow;}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.5rem;}
+
+article>header>hgroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+
+article>header>hgroup>h2 {
+    display: flex;
+    align-items: center;}
+
+article>header>hgroup>h2>img {padding-right: 1rem;}
+
+#footer_blog div:nth-child(2) {font-size: 0.9rem;}
+
+aside>h2 {
+    text-align: center;
+    font-size: 1.3rem;}
+
+aside>div:nth-of-type(even) {
+    padding: 0.7rem;
+    border-bottom: 1px dashed white;
+    background-color: black;}
+
+aside>div:nth-of-type(odd) {
+    padding: 0.7rem;
+    background-color: rgb(44, 43, 43);;
+    border-bottom: 1px dashed white;}
+
+aside>div>img {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 0.5rem;
+    margin: 0.9rem;
+    border-radius: 50%;}
+
+aside>div>span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;}
+
+aside>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;} 
