@@ -1,339 +1,353 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 
 
-body{
+body {
     margin: 0px;
-   color:#ffffff;
-font-family:Arial;
-background-color: black;
+    color: #ffffff;
+    font-family: Arial;
+    background-color: black;
 }
 
-article{
+article {
 
-background-color: rgb(44,43,43);
-padding:1.5rem;
-border-bottom:1px solid #ffffff;
-
-}
-
-.resaltado{
-color:yellow;
+    background-color: rgb(44, 43, 43);
+    padding: 1.5rem;
+    border-bottom: 1px solid #ffffff;
 
 }
 
+.resaltado {
+    color: yellow;
+
+}
 
 
 
 
 
-#titulo_del_blog{
+
+#titulo_del_blog {
     display: flex;
- text-align: center;
+    text-align: center;
     font-size: clamp(2rem, 1vw + 2rem, 7rem);
     font-weight: normal;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
+
 }
 
 
-.n{
-    color:white;
+.n {
+    color: white;
 }
 
-a{
-    color:white;
+a {
+    color: white;
 }
 
-img{
+img {
     margin-top: 10px;
 }
 
-table, th, td {
-   
+table,
+th,
+td {
+
     border: 10px solid orange;
     border-collapse: collapse;
 
-    
-    
 
-    
-    
-    
-padding: 5px;
+
+
+
+
+
+    padding: 5px;
 
 
 }
-table{margin-left: 10px;
-margin-right: 50px;}
 
-.ilustracion{
+table {
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.ilustracion {
     padding: 0px;
-    border:4px solid #ffffff ;
+    border: 4px solid #ffffff;
     display: inline-block;
 
 }
-@media(max-width:1024.1px){
-#footer_blog{
-    flex-direction: column;
-  text-align: center;
- margin: 10px;
- 
+
+@media(max-width:1024.1px) {
+    #footer_blog {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+
+    }
+
+    #footer_blog div:nth-child(1) {
+        margin: 10px;
+        font-size: medium;
+    }
+
+    #footer_blog div:nth-child(2) {
+        margin: 10px;
+    }
+
+    #footer_blog div:nth-child(3) {
+        margin: 10px;
+        font-size: medium;
+    }
 }
 
-#footer_blog div:nth-child(1){
-    margin: 10px;
-    font-size: medium;
-}
-
-#footer_blog div:nth-child(2){
-    margin: 10px;
-}
-#footer_blog div:nth-child(3){
-    margin: 10px;
-    font-size: medium;
-}
-}
 /*id del footer*/
 
-#footer_blog{
+#footer_blog {
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    margin:2rem;
-padding: 4rem 0rem 4rem 0rem;
-font-size: 1.3rem;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 4rem 0rem 4rem 0rem;
+    font-size: 1.3rem;
 }
 
 
 /*head es el estilo propio externo del pae que le voy a dar a mi blog en la parte del header */
 
-.margenes_figcaption{
+.margenes_figcaption {
     margin-top: 1rem;
-margin-left: 1rem;
-font-style: italic;    
+    margin-left: 1rem;
+    font-style: italic;
 }
 
 /* VIÑETAS ELIMINADAS*/
 
-    nav>ul>li{
-        list-style: none;
-    }
+nav>ul>li {
+    list-style: none;
+}
 
 
-    /*subrayado en links etiqueta "a" eliminadas*/
+/*subrayado en links etiqueta "a" eliminadas*/
 
 
-    nav>ul>li>a{
-        color: #ffffff;
-        text-decoration: none;
+nav>ul>li>a {
+    color: #ffffff;
+    text-decoration: none;
 
-    }
+}
 
-    .etiqueta{
-        background-color: #fffefe;
-        padding: 0.2rem;
-        border: 0.5px dashed #26628a;
-      
-        color: #26628a;
-        white-space: nowrap;
-    }
+.etiqueta {
+    background-color: #fffefe;
+    padding: 0.2rem;
+    border: 0.5px dashed #26628a;
+
+    color: #26628a;
+    white-space: nowrap;
+}
 
 
 
-    nav>ul>li>a:hover{
-color: greenyellow;
-text-decoration: underline;
+nav>ul>li>a:hover {
+    color: greenyellow;
+    text-decoration: underline;
 
-    }
+}
 
-    /*GRID Y ORGANIZACIÓN*/
-    section{
-display: grid;
-grid-template-columns: 
-repeat(12, 1fr);
-gap: 12px;
-grid-auto-rows: auto;
-    }
-    
-    main{
-        grid-column: span 12;
-    }
+/*GRID Y ORGANIZACIÓN*/
+section {
+    display: grid;
+    grid-template-columns:
+        repeat(12, 1fr);
+    gap: 12px;
+    grid-auto-rows: auto;
+}
 
-    @media(min-width:1024.1px){
-    main{
+main {
+    grid-column: span 12;
+}
+
+@media(min-width:1024.1px) {
+    main {
         grid-column: span 8;
 
     }
 }
-    header{
-        grid-column: span 12;
-    }
-    nav{
-        grid-column: span 12;
 
-    }
+header {
+    grid-column: span 12;
+}
 
-    aside{
-        grid-column: span 12;
-    }
+nav {
+    grid-column: span 12;
 
-    @media(min-width:1024.1px){
-    aside{
+}
+
+aside {
+    grid-column: span 12;
+}
+
+@media(min-width:1024.1px) {
+    aside {
         grid-column: span 4;
     }
 }
 
-    footer{
-        grid-column: span 12;
-        height:80px ;
-    }
+footer {
+    grid-column: span 12;
+    height: 80px;
+}
 
-    nav{
-        font-size: 1.3rem;   
-       
-     }
+nav {
+    font-size: 1.3rem;
+
+}
+
 /*Finaliza grid*/
 
 
 /*style PAE 9 */
 
-nav{
+nav {
     font-size: 1.3rem;
     position: fixed;
     width: 100%;
     background-color: rgb(39, 39, 39);
 }
 
-     ul{
-         display: flex;
-         align-items: center;
-         justify-content: space-around;
-         border-bottom: 1px solid #fff;
-         padding-bottom: 0.5rem;
-    
-     }
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 0.5rem;
 
-     article>header>hgroup{
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-     }
+}
 
-     article>header>hgroup>h2{
-         display: flex;
-         align-items: center;
-     }
+article>header>hgroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-     article>header>hgroup>h2>img{
-         margin-right: 1rem;
-     }
+article>header>hgroup>h2 {
+    display: flex;
+    align-items: center;
+}
 
-     #footer_blog div:nth-child(2) {
-         font-size: 0.9rem;
-     }
+article>header>hgroup>h2>img {
+    margin-right: 1rem;
+}
 
-     aside>div>img {
-         display: flex;
-         justify-content: space-between;
-         background-color:#ffffff;
-         border-radius: 50%;
-         padding: 0.5rem;
-         margin: 0.9rem;
-     }
+#footer_blog div:nth-child(2) {
+    font-size: 0.9rem;
+}
 
-     aside>div{
-         display: flex;
-         align-items: center;
-         justify-content: flex-start;
-         gap: 1rem;
+aside>div>img {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.9rem;
+}
 
-     }
+aside>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
 
-     @media(min-width:1024.1px) and (max-width:1324.1px){
-         aside>div{
-             flex-direction: column;
-         }
-     }
+}
 
-     aside>div>span{
-         display:flex;
-         align-items: flex-end;
-         justify-content: space-between;
-          }
+@media(min-width:1024.1px) and (max-width:1324.1px) {
+    aside>div {
+        flex-direction: column;
+    }
+}
 
-          aside>h2{
-              text-align: center;
-              font-size:1.3rem;
-            
-          }
+aside>div>span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 
-          aside>div:nth-of-type(odd){
-              padding: 0.7rem;
-              background-color:rgb(54, 53, 53);
-              border-bottom: 1px dashed white;
-          }
-           aside>div:nth-of-type(even){
-              padding: 0.7rem;
-              background-color:rgb(44, 43, 43);
-              border-bottom: 1px dashed white;
-          }
+aside>h2 {
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+aside>div:nth-of-type(odd) {
+    padding: 0.7rem;
+    background-color: rgb(54, 53, 53);
+    border-bottom: 1px dashed white;
+}
+
+aside>div:nth-of-type(even) {
+    padding: 0.7rem;
+    background-color: rgb(44, 43, 43);
+    border-bottom: 1px dashed white;
+}
 
 /*ESTILOS PAE 10*/
 
-       
-       
-        nav ul{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows:auto;
-            gap: 1rem;
-            border-bottom: 1px solid #fff;
-            padding-bottom:1.5rem;
-        }
-        
-       @media (min-width: 1100px) {
-          nav ul {
-         display: flex;
-         align-items: center;
-         justify-content: space-around;
-         border-bottom: 1px solid red;
-                      
-                    }
-                }
 
-              
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 1100px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid red;
+
+    }
+}
+
+
 
 
 
 /*FIN PAE 10*/
 
-        /*ESTILOS INDEPENDIENTES*/
+/*ESTILOS INDEPENDIENTES*/
 
 
-.ss{
+.ss {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows:auto;
- 
-    border-bottom: 1px solid #fff;
-    padding-bottom:1.5rem;
+    grid-auto-rows: auto;
 
-    list-style:none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5rem;
+
+    list-style: none;
     gap: 10px;
 }
 
 @media (min-width: 1100px) {
-    .ss{
-   display: flex;
-   align-items: center;
-   justify-content: space-around;}}
+    .ss {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
 
-.ss a:hover{
+.ss a:hover {
     text-decoration: none;
     color: blue;
 }
 
-        /*fin de estilos independientes*/
+/*fin de estilos independientes*/
