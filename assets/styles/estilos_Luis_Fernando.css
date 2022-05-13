@@ -43,13 +43,17 @@ article {
     color: white;
 }
 
-a {
-    color: white;
+footer div a {
+    color: rgb(116, 130, 255);
+
 }
 
-img {
-    margin-top: 10px;
+footer div a:hover {
+    color: rgb(116, 204, 255);
+    font-size: 20px;
 }
+
+
 
 table,
 th,
@@ -57,16 +61,7 @@ td {
 
     border: 10px solid orange;
     border-collapse: collapse;
-
-
-
-
-
-
-
     padding: 5px;
-
-
 }
 
 table {
@@ -201,10 +196,6 @@ footer {
     height: 80px;
 }
 
-nav {
-    font-size: 1.3rem;
-
-}
 
 /*Finaliza grid*/
 
