@@ -28,8 +28,9 @@ article {
     display: flex;
     text-align: center;
     font-size: clamp(2rem, 1vw + 2rem, 7rem);
-    font-weight: normal;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:900;
+    font-family:Arial, Helvetica, sans-serif;
+
 
 }
 
