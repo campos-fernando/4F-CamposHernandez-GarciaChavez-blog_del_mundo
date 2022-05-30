@@ -55,7 +55,7 @@ li{
 }
 
 a{
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: white;
     text-decoration: none;
 }
@@ -63,22 +63,22 @@ a{
 
 @media(min-width:1024.1px) {
 a{
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
     text-decoration: none;
 }
 }
 
 nav ul li a:hover{
-    font-size:1.5rem;
-    padding: 2rem;
+    font-size:3.5rem;
+    padding: 3rem;
     box-shadow: 5px 10px 10px 10px rgb(255, 255, 255);
  }
 
 
 @media(min-width:1024.1px) {
 nav ul li a:hover{
-    font-size:1.5rem;
+    font-size:5rem;
     padding: 3.5rem;
     box-shadow: 20px 10px 10px 10px rgb(255, 255, 255);
  }
@@ -87,10 +87,10 @@ nav ul li a:hover{
 
 
  nav ul li a{
-    width: 80%;
+    
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem;
     background-color: rgb(39, 37, 37);
     border-radius: 10px;
    
