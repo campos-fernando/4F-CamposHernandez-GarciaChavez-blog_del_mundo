@@ -1,5 +1,5 @@
 *{
-    padding: auto;
+    
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
 }
@@ -8,6 +8,23 @@ body{
     background-color: black;
 }
 
+
+     ul{
+       flex-direction: column;
+    }
+
+
+
+    nav ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+    gap: 1rem;
+    
+    }
+
+
+    @media(min-width:1024.1px) {
 nav ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -15,19 +32,22 @@ nav ul{
 
 
 }
+    }
 
-nav ul{
+    @media(min-width:1024.1px) {    
+ul{
     display:flex;
     aling-items:center;
     justify-content:space-between ;
+    gap:2rem;
     
 }
-
+    }
 
 #M{
     color: white;
     text-align: center;
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 li{
@@ -40,25 +60,55 @@ a{
     text-decoration: none;
 }
 
+
+@media(min-width:1024.1px) {
+a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+}
+
 nav ul li a:hover{
-    font-size:2.5rem;
+    font-size:1.5rem;
+    padding: 2rem;
+    box-shadow: 5px 10px 10px 10px rgb(255, 255, 255);
+ }
+
+
+@media(min-width:1024.1px) {
+nav ul li a:hover{
+    font-size:1.5rem;
     padding: 3.5rem;
     box-shadow: 20px 10px 10px 10px rgb(255, 255, 255);
  }
 
-nav ul li a{
+}
+ nav ul li a{
+    width: 80%;
     display: flex;
     align-items: center;
-    padding: 2.5rem;
+    padding: 1rem;
     background-color: rgb(39, 37, 37);
     border-radius: 10px;
    
 }
 
 
+nav ul li a{
+  
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(39, 37, 37);
+    border-radius: 10px;
+   
+}
+ 
+
 
  nav ul li a img{
-    margin-right: 10px;
+    margin-right: 1rem;
     background-color: #fff;
     border-radius: 50%;
     padding: 1rem;
@@ -66,5 +116,7 @@ nav ul li a{
 
 p{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
+
+
