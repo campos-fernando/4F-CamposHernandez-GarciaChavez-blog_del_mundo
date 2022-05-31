@@ -63,7 +63,7 @@ a{
 
 @media(min-width:1024.1px) {
 a{
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: white;
     text-decoration: none;
 }
@@ -78,7 +78,7 @@ nav ul li a:hover{
 
 @media(min-width:1024.1px) {
 nav ul li a:hover{
-    font-size:5rem;
+    font-size:4rem;
     padding: 3.5rem;
     box-shadow: 20px 10px 10px 10px rgb(255, 255, 255);
  }
@@ -89,7 +89,7 @@ nav ul li a:hover{
  nav ul li a{
     
     display: flex;
-    align-items: center;
+    align-self: center;
     padding: 3rem;
     background-color: rgb(39, 37, 37);
     border-radius: 10px;
