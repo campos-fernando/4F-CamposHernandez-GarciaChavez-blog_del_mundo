@@ -324,6 +324,11 @@ nav ul {
     gap: 10px;
 }
 
+.ss a{
+    color: rgb(130, 189, 238);
+}
+
+
 @media (min-width: 1100px) {
     .ss {
         display: flex;
@@ -335,6 +340,14 @@ nav ul {
 .ss a:hover {
     text-decoration: none;
     color: blue;
+}
+
+.n a{
+    color: rgb(130, 189, 238);
+}
+
+.s {
+    color: rgb(130, 189, 238);
 }
 
 /*fin de estilos independientes*/

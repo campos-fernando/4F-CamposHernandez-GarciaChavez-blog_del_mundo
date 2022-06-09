@@ -1,7 +1,8 @@
 /*empiezan clases generales*/
 .body_blog {
     background-color: black;
-    color: #fff;}
+    color: #fff;
+    margin: 0;}
 
 .article_blog {
     background: rgb(44, 43, 43);
@@ -29,15 +30,18 @@ nav>ul>li>a {text-decoration: none; color: #fff;}
     font-style: italic;
     margin-left: 1rem;}
 /*fin ilustración*/
+
 /*footer del blog*/
+@media (min-width: 1024.1px){
 #footer_blog {
     margin: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 4rem 0 4rem 0;
-    font-size: 1.3rem;}
+    font-size: 1.3rem;}}
 /*fin footer del blog*/
+
 /*Empieza grid*/
 section {
     display: grid;
@@ -52,22 +56,36 @@ section {
 header {
     grid-column: span 12;
     grid-row: auto;}
+
+main {grid-column: span 12;}
+
+@media (min-width: 1024.1px){
 main {
     grid-column: span 8;
-    grid-row: auto;}
+    grid-row: auto;}}
+
+aside {grid-column: span 12;}
+
+@media (min-width: 1024.1px){
 aside {
     grid-column: span 4;
-    grid-row: auto;}
+    grid-row: auto;}}
+
 footer {
     grid-column: span 12;
     grid-row: auto;}
 
-nav {font-size: 1.3rem;}
+nav {
+    font-size: 1.3rem;
+    position: fixed;
+    width: 100%;
+    background-color: black;}
 
 nav>ul>li>a:hover {
     text-decoration: underline; 
     color: greenyellow;}
 
+/*Pantallas de 0 a 1099px*/
 nav>ul {
     display: flex;
     align-items: center;
