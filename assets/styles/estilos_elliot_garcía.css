@@ -1,6 +1,6 @@
 /*empiezan clases generales*/
 .body_blog {
-    background-color: black;
+    
     color: #fff;
     margin: 0;}
 
@@ -114,9 +114,20 @@ article>header>hgroup>h2 {
     
 article>header>hgroup>h2>img {padding-right: 1rem;}
     
-#footer_blog div:nth-child(2) {font-size: 0.9rem;}
-#footer_blog{grid-column: span 12; text-align: center; padding: 4rem 0 4rem 0; font-size: 1.3rem;}
-#footer_blog div{padding: 1rem 0 1rem 0;}
+#footer_blog div:nth-child(2) {
+    font-size: 0.9rem;
+}
+
+#footer_blog{
+    grid-column: span 12; 
+    text-align: center; 
+    padding: 4rem 0 4rem 0; 
+    font-size: 1.3rem;
+}
+
+#footer_blog div{
+    padding: 1rem 0 1rem 0;
+}
     
 aside>h2 {
     text-align: center;
